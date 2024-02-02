@@ -57,7 +57,7 @@ Outputs:
     Value: !GetAtt HelloWorldFunctionRole.Arn
   EmbeddingApi:
     Description: "API Gateway endpoint URL for Prod stage for Embedding function"
-    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/hello/"
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/embed/"
   EmbeddingFunction:
     Description: "Embedding Lambda Function ARN"
     Value: !GetAtt EmbeddingFunction.Arn
